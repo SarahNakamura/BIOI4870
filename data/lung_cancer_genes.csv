@@ -1,0 +1,22 @@
+gene name,geneID,log2,full name,chromosome location
+RP11-40C6.2,ENSG00000219928.2,8.216,NULL,NULL
+XAGE1A,ENSG00000204379.10,6.983,X antigen family member 1A,Xp11.22
+XAGE1B,ENSG00000204382.11,6.181,X antigen family member 1B,Xp11.22
+RP5-940J5.9,ENSG00000269968.1,5.426,NULL,NULL
+IGHGP,ENSG00000253755.1,4.883,immunoglobulin heavy constant gamma P (non-functional),14q32.33
+CRABP2,ENSG00000143320.8,4.761,cellular retinoic acid binding protein 2,1q23.1
+FAM83A,ENSG00000147689.16,4.715,family with sequence similarity 83 member A,8q24.13
+SPP1,ENSG00000118785.13,4.652,secreted phosphoprotein 1,4q22.1
+TMPRSS4,ENSG00000137648.16,4.556,transmembrane serine protease 4,11q23.3
+CEACAM5,ENSG00000105388.14,4.521,CEA cell adhesion molecule 5,19q13.2
+
+RPS4Y1,ENSG00000129824.15,-7.557,ribosomal protein S4 Y-linked 1,Yp11.2
+FCN3,ENSG00000142748.12,-6.426,ficolin 3,1p36.11
+DEFA1B,ENSG00000240247.6,-5.967,defensin alpha 1B,8p23.1
+BTNL9,ENSG00000165810.16,-5.903,butyrophilin like 9,5q35.3
+DEFA1,ENSG00000206047.2,-5.754,defensin alpha 1,8p23.1
+IL1RL1,ENSG00000115602.16,-5.642,interleukin 1 receptor like 1,2q12.1
+TMEM100,ENSG00000166292.11,-5.489,transmembrane protein 100,17q22
+CA4,ENSG00000167434.9,-5.436,carbonic anhydrase 4,17q23.1
+AGER,ENSG00000204305.13,-5.336,advanced glycosylation end-product specific receptor,6p21.32
+HBA1,ENSG00000206172.8,-5.12,hemoglobin subunit alpha 1,16p13.3
