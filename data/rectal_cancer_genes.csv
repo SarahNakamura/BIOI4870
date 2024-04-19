@@ -1,5 +1,5 @@
 gene name,geneID,log2,full name,chromosome location
-RP11-40C6.2,ENSG00000219928.2,8.617,RP11-40C6.2 (Clone-based (Vega) gene),NULL,NULL
+RP11-40C6.2,ENSG00000219928.2,8.617,RP11-40C6.2 (Clone-based (Vega) gene),NULL
 CEACAM6,ENSG00000086548.8,8.144,CEA cell adhesion molecule 6,19q13.2
 CEACAM5,ENSG00000105388.14,7.502,CEA cell adhesion molecule 5,19q13.2
 LCN2,ENSG00000148346.11,7.016,lipocalin 2,9q34.11
