@@ -29,14 +29,16 @@ CREATE TABLE colon_cancer_genes(
     gene_id VARCHAR(17)
     log2 FLOAT(4)
     full_name VARCHAR(30)
-    chromosome_location VARCHAR(7))
+    chromosome_location VARCHAR(7)
+    );
 
 CREATE TABLE rectal_cancer_genes(
     gene_name VARCHAR(15)
     gene_id VARCHAR(17)
     log2 FLOAT(4)
     full_name VARCHAR(30)
-    chromosome_location VARCHAR(7))
+    chromosome_location VARCHAR(7)
+    );
 
 -- DDL to create table gene_mutation
 INSERT INTO breast_cancer_genes VALUES ('COL10A1','ENSG00000123500.9',5.934,'collagen type X alpha 1 chain','6q22.1');
