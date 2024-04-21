@@ -14,12 +14,14 @@ CREATE TABLE breast_cancer_mutation(
     frameshift INT(3),
     splice INT(3),
     nonsense INT(3),
+    proteindel INT(3),
     silent INT(3),
     proteinins INT(3),
     intron INT(3),
     splice_region INT(3),
-    total INT(3)
-    );
+    total INT(3),
+    PRIMARY KEY (gene_name)
+);
 
 CREATE TABLE lung_cancer_mutation(
     gene_name VARCHAR(15),
@@ -32,8 +34,9 @@ CREATE TABLE lung_cancer_mutation(
     proteinins INT(3),
     intron INT(3),
     splice_region INT(3),
-    total INT(3)
-    );
+    total INT(3),
+    PRIMARY KEY (gene_name)
+);
 
 CREATE TABLE colon_cancer_mutation(
     gene_name VARCHAR(15),
@@ -46,8 +49,9 @@ CREATE TABLE colon_cancer_mutation(
     proteinins INT(3),
     intron INT(3),
     splice_region INT(3),
-    total INT(3)
-    );
+    total INT(3),
+    PRIMARY KEY (gene_name)
+);
 
 CREATE TABLE rectal_cancer_mutation(
     gene_name VARCHAR(15),
@@ -60,8 +64,9 @@ CREATE TABLE rectal_cancer_mutation(
     proteinins INT(3),
     intron INT(3),
     splice_region INT(3),
-    total INT(3)
-    );
+    total INT(3),
+    PRIMARY KEY (gene_name)
+);
 
 -- DDL to create table gene_mutation
 INSERT INTO breast_cancer_mutation VALUES ('COL10A1',101,7,0,3,0,19,0,0,0,130);
@@ -75,7 +80,7 @@ INSERT INTO breast_cancer_mutation VALUES ('RP5-940J5.9',0,0,0,0,0,0,0,0,0,0);
 INSERT INTO breast_cancer_mutation VALUES ('AGR3',27,1,0,4,0,8,0,0,1,41);
 INSERT INTO breast_cancer_mutation VALUES ('S100P',7,1,0,0,1,6,0,0,0,15);
 INSERT INTO breast_cancer_mutation VALUES ('ADH1B',103,4,4,5,0,41,0,9,3,169);
-INSERT INTO breast_cancer_mutation VALUES ('FABP4',21,2,0,4,-,9,0,0,0,36);
+INSERT INTO breast_cancer_mutation VALUES ('FABP4',21,2,0,4,0,9,0,0,0,36);
 INSERT INTO breast_cancer_mutation VALUES ('CIDEC',30,1,0,3,0,14,0,1,0,49);
 INSERT INTO breast_cancer_mutation VALUES ('PLIN1',58,4,2,4,0,20,0,0,0,88);
 INSERT INTO breast_cancer_mutation VALUES ('GPD1',57,2,3,5,0,22,0,13,1,103);
@@ -112,7 +117,7 @@ INSERT INTO colon_cancer_mutation VALUES ('DPEP1',53,4,1,5,0,28,0,0,0,91);
 INSERT INTO colon_cancer_mutation VALUES ('S100P',7,1,0,0,1,6,0,0,0,15);
 INSERT INTO colon_cancer_mutation VALUES ('LCN2',30,2,1,0,0,10,0,2,1,46);
 INSERT INTO colon_cancer_mutation VALUES ('CEACAM5',140,5,2,5,0,71,1,2,5,231);
-INSERT INTO colon_cancer_mutation VALUES ('CLDN2',45,2,,1,0,22,0,0,0,70);
+INSERT INTO colon_cancer_mutation VALUES ('CLDN2',45,2,0,1,0,22,0,0,0,70);
 INSERT INTO colon_cancer_mutation VALUES ('ETV4',57,5,2,2,0,33,0,3,3,105);
 INSERT INTO colon_cancer_mutation VALUES ('CDH3',94,4,2,7,0,40,0,5,3,155);
 INSERT INTO colon_cancer_mutation VALUES ('MMP7',38,4,1,5,0,10,0,1,0,59);
