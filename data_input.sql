@@ -9,45 +9,49 @@ DROP TABLE IF EXISTS rectal_cancer_genes;
 
 -- DDL to create table gene_info
 CREATE TABLE breast_cancer_genes(
-    gene_name VARCHAR(15)
-    gene_id VARCHAR(17)
-    log2 FLOAT(4)
-    full_name VARCHAR(30)
-    chromosome_location VARCHAR(7)
+    gene_name VARCHAR(15),
+    gene_id VARCHAR(20),
+    log2 FLOAT(4,3),
+    full_name VARCHAR(70),
+    chromosome_location VARCHAR(8),
+    PRIMARY KEY (gene_id)
     );
 
 CREATE TABLE lung_cancer_genes(
-    gene_name VARCHAR(15)
-    gene_id VARCHAR(17)
-    log2 FLOAT(4)
-    full_name VARCHAR(30)
-    chromosome_location VARCHAR(7)
+    gene_name VARCHAR(15),
+    gene_id VARCHAR(20),
+    log2 FLOAT(4,3),
+    full_name VARCHAR(70),
+    chromosome_location VARCHAR(8),
+    PRIMARY KEY (gene_id)
     );
 
 CREATE TABLE colon_cancer_genes(
-    gene_name VARCHAR(15)
-    gene_id VARCHAR(17)
-    log2 FLOAT(4)
-    full_name VARCHAR(30)
-    chromosome_location VARCHAR(7)
+    gene_name VARCHAR(15),
+    gene_id VARCHAR(20),
+    log2 FLOAT(4,3),
+    full_name VARCHAR(70),
+    chromosome_location VARCHAR(8),
+    PRIMARY KEY (gene_id)
     );
 
 CREATE TABLE rectal_cancer_genes(
-    gene_name VARCHAR(15)
-    gene_id VARCHAR(17)
-    log2 FLOAT(4)
-    full_name VARCHAR(30)
-    chromosome_location VARCHAR(7)
+    gene_name VARCHAR(15),
+    gene_id VARCHAR(20),
+    log2 FLOAT(4,3),
+    full_name VARCHAR(70),
+    chromosome_location VARCHAR(8),
+    PRIMARY KEY (gene_id)
     );
 
 -- DDL to create table gene_mutation
 INSERT INTO breast_cancer_genes VALUES ('COL10A1','ENSG00000123500.9',5.934,'collagen type X alpha 1 chain','6q22.1');
-INSERT INTO breast_cancer_genes VALUES ('TFF1,ENSG00000160182.2',5.892,'trefoil factor 1','21q22.3');
-INSERT INTO breast_cancer_genes VALUES ('RP11-40C6.2','ENSG00000219928.2',5.642,NULL,NULL)
+INSERT INTO breast_cancer_genes VALUES ('TFF1','ENSG00000160182.2',5.892,'trefoil factor 1','21q22.3');
+INSERT INTO breast_cancer_genes VALUES ('RP11-40C6.2','ENSG00000219928.2',5.642,NULL,NULL);
 INSERT INTO breast_cancer_genes VALUES ('MMP11','ENSG00000099953.9',5.567,'matrix metallopeptidase 11','22q11.23');
 INSERT INTO breast_cancer_genes VALUES ('COL11A1','ENSG00000060718.18',4.668,'collagen type XI alpha 1 chain','1p21.1');
 INSERT INTO breast_cancer_genes VALUES ('AP000349.2','ENSG00000280178.1',4.561,NULL,NULL);
-INSERT INTO breast_cancer_genes VALUES ('UBE2C,ENSG00000175063.16,4.527','ubiquitin conjugating enzyme E2 C','20q13.12');
+INSERT INTO breast_cancer_genes VALUES ('UBE2C','ENSG00000175063.16',4.527,'ubiquitin conjugating enzyme E2 C','20q13.12');
 INSERT INTO breast_cancer_genes VALUES ('RP5-940J5.9','ENSG00000269968.1',4.191,NULL,NULL);
 INSERT INTO breast_cancer_genes VALUES ('AGR3','ENSG00000173467.8',4.189,'anterior gradient 3/ protein disulphide isomerase family member','7p21.1');
 INSERT INTO breast_cancer_genes VALUES ('S100P','ENSG00000163993.6',4.113,'S100 calcium binding protein P','4p16.1');
@@ -76,7 +80,7 @@ INSERT INTO lung_cancer_genes VALUES ('RPS4Y1','ENSG00000129824.15',-7.557,'ribo
 INSERT INTO lung_cancer_genes VALUES ('FCN3','ENSG00000142748.12',-6.426,'ficolin 3','1p36.11');
 INSERT INTO lung_cancer_genes VALUES ('DEFA1B','ENSG00000240247.6',-5.967,'defensin alpha 1B','8p23.1');
 INSERT INTO lung_cancer_genes VALUES ('BTNL9','ENSG00000165810.16',-5.903,'butyrophilin like 9','5q35.3');
-INSERT INTO lung_cancer_genes VALUES ('DEFA1','ENSG00000206047.2',-5.754,'defensin alpha 1',8p23.1);
+INSERT INTO lung_cancer_genes VALUES ('DEFA1','ENSG00000206047.2',-5.754,'defensin alpha 1','8p23.1');
 INSERT INTO lung_cancer_genes VALUES ('IL1RL1','ENSG00000115602.16',-5.642,'interleukin 1 receptor like 1','2q12.1');
 INSERT INTO lung_cancer_genes VALUES ('TMEM100','ENSG00000166292.11',-5.489,'transmembrane protein 100','17q22');
 INSERT INTO lung_cancer_genes VALUES ('CA4','ENSG00000167434.9',-5.436,'carbonic anhydrase 4','17q23.1');
@@ -89,7 +93,7 @@ INSERT INTO colon_cancer_genes VALUES ('DPEP1','ENSG00000015413.9',6.243,'dipept
 INSERT INTO colon_cancer_genes VALUES ('S100P','ENSG00000163993.6',6.145,'S100 calcium binding protein P','4p16.1');
 INSERT INTO colon_cancer_genes VALUES ('LCN2','ENSG00000148346.11',6.027,'lipocalin 2','9q34.11');
 INSERT INTO colon_cancer_genes VALUES ('CEACAM5','ENSG00000105388.14',5.776,'CEA cell adhesion molecule 5','19q13.2');
-INSERT INTO colon_cancer_genes VALUES ('CLDN2','ENSG00000165376.10',5.429,'claudin 2',Xq22.3);
+INSERT INTO colon_cancer_genes VALUES ('CLDN2','ENSG00000165376.10',5.429,'claudin 2','Xq22.3');
 INSERT INTO colon_cancer_genes VALUES ('ETV4','ENSG00000175832.12',5.297,'ETS variant transcription factor 4','17q21.31');
 INSERT INTO colon_cancer_genes VALUES ('CDH3','ENSG00000062038.13',5.258,'cadherin 3','16q22.1');
 INSERT INTO colon_cancer_genes VALUES ('MMP7','ENSG00000137673.8',5.129,'matrix metallopeptidase 7','11q22.2');

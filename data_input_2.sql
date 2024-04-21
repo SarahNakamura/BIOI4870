@@ -9,58 +9,57 @@ DROP TABLE IF EXISTS rectal_cancer_mutation;
 
 -- DDL to create table gene_info
 CREATE TABLE breast_cancer_mutation(
-    gene_name VARCHAR(15)
-    missense INT(3)
-    frameshift INT(3)
-    splice INT(3)
-    nonsense INT(3)
-    proteindel INT(3)
-    silent INT(3)
-    proteinins INT(3)
-    intron INT(3)
-    splice_region INT(3)
+    gene_name VARCHAR(15),
+    missense INT(3),
+    frameshift INT(3),
+    splice INT(3),
+    nonsense INT(3),
+    silent INT(3),
+    proteinins INT(3),
+    intron INT(3),
+    splice_region INT(3),
     total INT(3)
     );
 
 CREATE TABLE lung_cancer_mutation(
-    gene_name VARCHAR(15)
-    missense INT(3)
-    frameshift INT(3)
-    splice INT(3)
-    nonsense INT(3)
-    proteindel INT(3)
-    silent INT(3)
-    proteinins INT(3)
-    intron INT(3)
-    splice_region INT(3)
+    gene_name VARCHAR(15),
+    missense INT(3),
+    frameshift INT(3),
+    splice INT(3),
+    nonsense INT(3),
+    proteindel INT(3),
+    silent INT(3),
+    proteinins INT(3),
+    intron INT(3),
+    splice_region INT(3),
     total INT(3)
     );
 
 CREATE TABLE colon_cancer_mutation(
-    gene_name VARCHAR(15)
-    missense INT(3)
-    frameshift INT(3)
-    splice INT(3)
-    nonsense INT(3)
-    proteindel INT(3)
-    silent INT(3)
-    proteinins INT(3)
-    intron INT(3)
-    splice_region INT(3)
+    gene_name VARCHAR(15),
+    missense INT(3),
+    frameshift INT(3),
+    splice INT(3),
+    nonsense INT(3),
+    proteindel INT(3),
+    silent INT(3),
+    proteinins INT(3),
+    intron INT(3),
+    splice_region INT(3),
     total INT(3)
     );
 
 CREATE TABLE rectal_cancer_mutation(
-    gene_name VARCHAR(15)
-    missense INT(3)
-    frameshift INT(3)
-    splice INT(3)
-    nonsense INT(3)
-    proteindel INT(3)
-    silent INT(3)
-    proteinins INT(3)
-    intron INT(3)
-    splice_region INT(3)
+    gene_name VARCHAR(15),
+    missense INT(3),
+    frameshift INT(3),
+    splice INT(3),
+    nonsense INT(3),
+    proteindel INT(3),
+    silent INT(3),
+    proteinins INT(3),
+    intron INT(3),
+    splice_region INT(3),
     total INT(3)
     );
 
