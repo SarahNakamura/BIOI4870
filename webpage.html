@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="webview" content="width=divice-width, initial-scale=1.0">
-    <title>BIOI-4870 Final Project [Gene Mutation and Cancer]</title>
+    <h1 style="background-color:Lavender">BIOI-4870 Final Project [Gene Mutation and Cancer]</h1>
     <style>
         table, th, td {
         border: 1px solid black;
@@ -25,45 +25,22 @@
             <th>Cancer Name</th>
             <th>Cancer Symbol</th>
         </tr>
-        <?php
-        // MySQL database connection
-        $servername = "localhost";
-        $username = "username"; //Your MySQL username
-        $password = ""; //Apply password if applicable
-        $dbname = "snakamura";
-
-        /*Connect to my database
-        * and throw errors if it's unable to connect.
-        *Displays table data to interface.*/
-        $connect = mysqli_connect($server,$username,$password,$database);
-
-        if ($connect->connect_error){
-                 echo "Something has gone terribly wrong";
-                 echo "Connection error:" .$connect->connect_error;
-        }
-        /* Run a basic SQL query and throw
-         * an error if its unable to perform the query
-         */
-        $query = "SELECT * FROM cancer_types";
-        $result = mysqli_query($connect, $query)
-                  or trigger_error("Query Failed! SQL: $query - Error: "
-                  . mysqli_error($connect), E_USER_ERROR);
-        if ($result = mysqli_query($connect, $query)) {
-           while ($row = mysqli_fetch_row($result)) {
-                echo "<tr>";
-                echo "<td>$row[0]</td>";
-                echo "<td>$row[1]</td>";
-                echo "</tr>";
-           }
-           mysqli_free_result($result);
-        }else{
-           echo "No results";
-        }
-        /*Always close your connection.
-         * Its a courtesy to your fellow users.
-         */
-        mysqli_close($connect);
-        ?>
+        <tr>
+            <td>Breast Cancer</td>
+            <td><a href="brca.html">BRCA</a></td>
+        </tr>
+        <tr>
+            <td>Lung Cancer</td>
+            <td><a href="luad.html">LUAD</a></td>
+        </tr>
+        <tr>
+            <td>Colon Cancer</td>
+            <td><a href="coad.html">COAD</a></td>
+        </tr>
+        <tr>
+            <td>Rectal Cancer</td>
+            <td><a href="read.html">READ</a></td>
+        </tr>
     </table>
 </body>
 </html>
