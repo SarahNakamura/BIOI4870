@@ -42,9 +42,11 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Branch</th>
-                <th>Roll Number</th>
+                <th>Gene Name</th>
+                <th>ENSEMBL ID</th>
+                <th>Log2 Fold</th>
+                <th>Full Name</th>
+                <th>Chromosome Location</th>
             </tr>
         </thead>
         <tbody>
@@ -55,11 +57,11 @@
             ?>
             <tr>
 
-                <td><?php echo $rows['gene name']; ?></td>
-                <td><?php echo $rows['ENSEMBL ID']; ?></td>
-                <td><?php echo $rows['log2 fold']; ?></td>
-                <td><?php echo $rows['full name']; ?></td>
-                <td><?php echo $rows['chromosome location']; ?></td>
+                <td><?php echo $rows['gene_name']; ?></td>
+                <td><?php echo $rows['gene_id']; ?></td>
+                <td><?php echo $rows['log2']; ?></td>
+                <td><?php echo $rows['full_name']; ?></td>
+                <td><?php echo $rows['chromosome_location']; ?></td>
 
             </tr>
             <?php } ?>
