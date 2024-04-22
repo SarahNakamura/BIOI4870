@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS cancer_types;
 -- DDL to create table gene_info
 CREATE TABLE cancer_types(
     cancer_name VARCHAR(15),
-    cancer_abb(4),
+    cancer_abb VARCHAR(4),
     PRIMARY KEY (cancer_abb)
 );
 
