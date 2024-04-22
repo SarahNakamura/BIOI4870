@@ -14,7 +14,7 @@
        exit();
     }
 
-    $sql = "SELECT * FROM breast_cancer_genes WHERE gene_name='COL10A1'";
+    $sql = "SELECT * FROM COL10A1_mutation";
     $result = ($conn->query($sql));
     //declare array to store the data of database
     $row = [];
@@ -26,9 +26,52 @@
     }
 ?>
 
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Mutation', 'Frequency']
+          <?php
+                while($chart = mysqli_fetch_assoc($result))
+                echo "['$chart['name']','$chart['frequency']']"
+          ?>
+        ]);
+
+        var options = {
+          title: 'Frequency of Mutation by Mutation Type'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
+<?php
+    mysqli_close($conn);
+?>
+
+
+
+
+
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -43,15 +86,15 @@
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Mutation', 'Types per mutation gene'],
+          ['Mutation', 'Mutation Frequency'],
 
           <?php
 
                 while($chart = mysqli_fetch_assoc($result))
                 {
-                    echo "['".$chart['missense']."','".$chart['frameshift']."','".$chart['splice']."','".$chart['nonsense']."','".$chart['proteindel']."','".$chart['silent']."','".$chart['proteinins']."','".$chart['intron']."','".$chart['splice_region']."'
+                    echo "['".$chart['name']."','".$chart['frequency']."']"
                 }
-
+          ?>
 
         ]);
 
