@@ -149,7 +149,7 @@ INSERT INTO LCN2_mutation VALUES ('frameshift',2);
 INSERT INTO LCN2_mutation VALUES ('splice',1);
 INSERT INTO LCN2_mutation VALUES ('nonsense',0);
 INSERT INTO LCN2_mutation VALUES ('proteinindel',0);
-INSERT INTO LCN2_mutation VALUES ('silent'10);
+INSERT INTO LCN2_mutation VALUES ('silent',10);
 INSERT INTO LCN2_mutation VALUES ('proteinins',0);
 INSERT INTO LCN2_mutation VALUES ('intron',2);
 INSERT INTO LCN2_mutation VALUES ('splice region',1);
