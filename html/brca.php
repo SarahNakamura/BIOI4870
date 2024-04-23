@@ -57,7 +57,7 @@
             ?>
             <tr>
 
-                <td><?php echo $rows['gene_name']; ?></td>
+                <td><a href="<?php echo $rows['gene_name'] ?>.php"><?php echo $rows['gene_name']; ?></a></td>
                 <td><?php echo $rows['gene_id']; ?></td>
                 <td><?php echo $rows['log2']; ?></td>
                 <td><?php echo $rows['full_name']; ?></td>
