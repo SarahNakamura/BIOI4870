@@ -4,12 +4,12 @@ USE snakamura;
 -- Drop the breast_cancer_genes, lung_cancer_genes, colon_cancer_genes, and rectal_cancer_genes tables if it already exists
 DROP TABLE IF EXISTS COL10A1_mutation;
 DROP TABLE IF EXISTS TFF1_mutation;
-DROP TABLE IF EXISTS RP11-40C6.2_mutation;
+DROP TABLE IF EXISTS RP11_40C6_2_mutation;
 DROP TABLE IF EXISTS MMP11_mutation;
 DROP TABLE IF EXISTS COL11A1_mutation;
-DROP TABLE IF EXISTS AP000349.2_mutation;
+DROP TABLE IF EXISTS AP000349_2_mutation;
 DROP TABLE IF EXISTS UBE2C_mutation;
-DROP TABLE IF EXISTS RP5-940J5.9_mutation;
+DROP TABLE IF EXISTS RP5_940J5_9_mutation;
 DROP TABLE IF EXISTS AGR3_mutation;
 DROP TABLE IF EXISTS S100P_mutation;
 DROP TABLE IF EXISTS ADH1B_mutation;
@@ -32,7 +32,7 @@ CREATE TABLE TFF1_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE RP11-40C6.2_mutation(
+CREATE TABLE RP11_40C6_2_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
@@ -44,7 +44,7 @@ CREATE TABLE COL11A1_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE AP000349.2_mutation(
+CREATE TABLE AP000349_2_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
@@ -52,7 +52,7 @@ CREATE TABLE UBE2C_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE RP5-940J5.9_mutation(
+CREATE TABLE RP5_940J5_9_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
@@ -126,15 +126,15 @@ INSERT INTO TFF1_mutation VALUES ('proteinins',0);
 INSERT INTO TFF1_mutation VALUES ('intron',0);
 INSERT INTO TFF1_mutation VALUES ('splice region',0);
 
-INSERT INTO RP11-40C6.2_mutation VALUES ('missense',0);
-INSERT INTO RP11-40C6.2_mutation VALUES ('frameshift',0);
-INSERT INTO RP11-40C6.2_mutation VALUES ('splice',0);
-INSERT INTO RP11-40C6.2_mutation VALUES ('nonsense',0);
-INSERT INTO RP11-40C6.2_mutation VALUES ('proteinindel',0);
-INSERT INTO RP11-40C6.2_mutation VALUES ('silent',8);
-INSERT INTO RP11-40C6.2_mutation VALUES ('proteinins',0);
-INSERT INTO RP11-40C6.2_mutation VALUES ('intron',0);
-INSERT INTO RP11-40C6.2_mutation VALUES ('splice region',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('missense',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('frameshift',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('splice',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('nonsense',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('proteinindel',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('silent',8);
+INSERT INTO RP11_40C6_2_mutation VALUES ('proteinins',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('intron',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('splice region',0);
 
 INSERT INTO MMP11_mutation VALUES ('missense',64);
 INSERT INTO MMP11_mutation VALUES ('frameshift',5);
@@ -157,15 +157,15 @@ INSERT INTO COL11A1_mutation VALUES ('intron',33);
 INSERT INTO COL11A1_mutation VALUES ('splice region',17);
 
 
-INSERT INTO AP000349.2_mutation VALUES ('missense',0);
-INSERT INTO AP000349.2_mutation VALUES ('frameshift',0);
-INSERT INTO AP000349.2_mutation VALUES ('splice',0);
-INSERT INTO AP000349.2_mutation VALUES ('nonsense',0);
-INSERT INTO AP000349.2_mutation VALUES ('proteinindel',0);
-INSERT INTO AP000349.2_mutation VALUES ('silent',0);
-INSERT INTO AP000349.2_mutation VALUES ('proteinins',0);
-INSERT INTO AP000349.2_mutation VALUES ('intron',0);
-INSERT INTO AP000349.2_mutation VALUES ('splice region',0);
+INSERT INTO AP000349_2_mutation VALUES ('missense',0);
+INSERT INTO AP000349_2_mutation VALUES ('frameshift',0);
+INSERT INTO AP000349_2_mutation VALUES ('splice',0);
+INSERT INTO AP000349_2_mutation VALUES ('nonsense',0);
+INSERT INTO AP000349_2_mutation VALUES ('proteinindel',0);
+INSERT INTO AP000349_2_mutation VALUES ('silent',0);
+INSERT INTO AP000349_2_mutation VALUES ('proteinins',0);
+INSERT INTO AP000349_2_mutation VALUES ('intron',0);
+INSERT INTO AP000349_2_mutation VALUES ('splice region',0);
 
 
 INSERT INTO UBE2C_mutation VALUES ('missense',16);
@@ -179,15 +179,15 @@ INSERT INTO UBE2C_mutation VALUES ('intron',7);
 INSERT INTO UBE2C_mutation VALUES ('splice region',2);
 
 
-INSERT INTO RP5-940J5.9_mutation VALUES ('missense',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('frameshift',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('splice',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('nonsense',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('proteinindel',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('silent',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('proteinins',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('intron',0);
-INSERT INTO RP5-940J5.9_mutation VALUES ('splice region',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('missense',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('frameshift',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('splice',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('nonsense',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('proteinindel',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('silent',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('proteinins',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('intron',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('splice region',0);
 
 
 INSERT INTO AGR3_mutation VALUES ('missense',27);
