@@ -2,324 +2,304 @@
 USE snakamura;
 
 -- Drop the breast_cancer_genes, lung_cancer_genes, colon_cancer_genes, and rectal_cancer_genes tables if it already exists
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
-DROP TABLE IF EXISTS _mutation;
+DROP TABLE IF EXISTS RP11_40C6_2_mutation;
+DROP TABLE IF EXISTS XAGE1A_mutation;
+DROP TABLE IF EXISTS XAGE1B_mutation;
+DROP TABLE IF EXISTS RP5_940J5_9_mutation;
+DROP TABLE IF EXISTS IGHGP_mutation;
+DROP TABLE IF EXISTS CRABP2_mutation;
+DROP TABLE IF EXISTS FAM83A_mutation;
+DROP TABLE IF EXISTS SPP1_mutation;
+DROP TABLE IF EXISTS TMPRSS4_mutation;
+DROP TABLE IF EXISTS CEACAM5_mutation;
+DROP TABLE IF EXISTS RPS4Y1_mutation;
+DROP TABLE IF EXISTS FCN3_mutation;
+DROP TABLE IF EXISTS DEFA1B_mutation;
+DROP TABLE IF EXISTS BTNL9_mutation;
+DROP TABLE IF EXISTS DEFA1_mutation;
+DROP TABLE IF EXISTS IL1RL1_mutation;
+DROP TABLE IF EXISTS TMEM100_mutation;
+DROP TABLE IF EXISTS CA4_mutation;
+DROP TABLE IF EXISTS AGER_mutation;
+DROP TABLE IF EXISTS HBA1_mutation;
 
-CREATE TABLE _mutation(
+CREATE TABLE RP11_40C6_2_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE XAGE1A_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE XAGE1B_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE RP5_940J5_9_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE IGHGP_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE CRABP2_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE FAM83A_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE SPP1_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE  TMPRSS4_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE CEACAM5_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE RPS4Y1_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE FCN3_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE DEFA1B_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE BTNL9_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE DEFA1_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE IL1RL1_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE TMEM100_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE CA4_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE AGER_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
-CREATE TABLE _mutation(
+CREATE TABLE HBA1_mutation(
     name VARCHAR(15),
     frequency INT(3)
 );
 
-INSERT INTO lung_cancer_mutation VALUES ('RP11-40C6.2',0,0,0,0,0,0,0,0,0,0);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('missense',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('frameshift',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('splice',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('nonsense',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('proteinindel',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('silent',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('proteinins',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('intron',0);
+INSERT INTO RP11_40C6_2_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('XAGE1A',0,0,0,0,0,0,0,0,0,0);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO XAGE1A_mutation VALUES ('missense',0);
+INSERT INTO XAGE1A_mutation VALUES ('frameshift',0);
+INSERT INTO XAGE1A_mutation VALUES ('splice',0);
+INSERT INTO XAGE1A_mutation VALUES ('nonsense',0);
+INSERT INTO XAGE1A_mutation VALUES ('proteinindel',0);
+INSERT INTO XAGE1A_mutation VALUES ('silent',0);
+INSERT INTO XAGE1A_mutation VALUES ('proteinins',0);
+INSERT INTO XAGE1A_mutation VALUES ('intron',0);
+INSERT INTO XAGE1A_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('XAGE1B',0,1,0,0,0,0,0,0,0,1);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO XAGE1B_mutation VALUES ('missense',0);
+INSERT INTO XAGE1B_mutation VALUES ('frameshift',1);
+INSERT INTO XAGE1B_mutation VALUES ('splice',0);
+INSERT INTO XAGE1B_mutation VALUES ('nonsense',0);
+INSERT INTO XAGE1B_mutation VALUES ('proteinindel',0);
+INSERT INTO XAGE1B_mutation VALUES ('silent',0);
+INSERT INTO XAGE1B_mutation VALUES ('proteinins',0);
+INSERT INTO XAGE1B_mutation VALUES ('intron',0);
+INSERT INTO XAGE1B_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('RP5-940J5.9',0,0,0,0,0,0,0,0,0,0);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('missense',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('frameshift',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('splice',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('nonsense',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('proteinindel',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('silent',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('proteinins',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('intron',0);
+INSERT INTO RP5_940J5_9_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('IGHGP',0,0,0,0,0,0,0,0,0,0);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO IGHGP_mutation VALUES ('missense',0);
+INSERT INTO IGHGP_mutation VALUES ('frameshift',0);
+INSERT INTO IGHGP_mutation VALUES ('splice',0);
+INSERT INTO IGHGP_mutation VALUES ('nonsense',0);
+INSERT INTO IGHGP_mutation VALUES ('proteinindel',0);
+INSERT INTO IGHGP_mutation VALUES ('silent',0);
+INSERT INTO IGHGP_mutation VALUES ('proteinins',0);
+INSERT INTO IGHGP_mutation VALUES ('intron',0);
+INSERT INTO IGHGP_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('CRABP2',24,0,0,3,0,6,0,0,1,34);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO CRABP2_mutation VALUES ('missense',24);
+INSERT INTO CRABP2_mutation VALUES ('frameshift',0);
+INSERT INTO CRABP2_mutation VALUES ('splice',0);
+INSERT INTO CRABP2_mutation VALUES ('nonsense',3);
+INSERT INTO CRABP2_mutation VALUES ('proteinindel',0);
+INSERT INTO CRABP2_mutation VALUES ('silent',6);
+INSERT INTO CRABP2_mutation VALUES ('proteinins',0);
+INSERT INTO CRABP2_mutation VALUES ('intron',0);
+INSERT INTO CRABP2_mutation VALUES ('splice region',1);
 
-INSERT INTO lung_cancer_mutation VALUES ('FAM83A',75,1,4,4,0,35,0,0,0,119);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO FAM83A_mutation VALUES ('missense',75);
+INSERT INTO FAM83A_mutation VALUES ('frameshift',1);
+INSERT INTO FAM83A_mutation VALUES ('splice',4);
+INSERT INTO FAM83A_mutation VALUES ('nonsense',4);
+INSERT INTO FAM83A_mutation VALUES ('proteinindel',0);
+INSERT INTO FAM83A_mutation VALUES ('silent',35);
+INSERT INTO FAM83A_mutation VALUES ('proteinins',0);
+INSERT INTO FAM83A_mutation VALUES ('intron',0);
+INSERT INTO FAM83A_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('SPP1',69,0,1,6,1,22,0,3,0,102);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO SPP1_mutation VALUES ('missense',69);
+INSERT INTO SPP1_mutation VALUES ('frameshift',0);
+INSERT INTO SPP1_mutation VALUES ('splice',1);
+INSERT INTO SPP1_mutation VALUES ('nonsense',6);
+INSERT INTO SPP1_mutation VALUES ('proteinindel',1);
+INSERT INTO SPP1_mutation VALUES ('silent',22);
+INSERT INTO SPP1_mutation VALUES ('proteinins',0);
+INSERT INTO SPP1_mutation VALUES ('intron',3);
+INSERT INTO SPP1_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('TMPRSS4',57,0,4,1,0,37,0,2,3,104);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO TMPRSS4_mutation VALUES ('missense',57);
+INSERT INTO TMPRSS4_mutation VALUES ('frameshift',0);
+INSERT INTO TMPRSS4_mutation VALUES ('splice',4);
+INSERT INTO TMPRSS4_mutation VALUES ('nonsense',1);
+INSERT INTO TMPRSS4_mutation VALUES ('proteinindel',0);
+INSERT INTO TMPRSS4_mutation VALUES ('silent',37);
+INSERT INTO TMPRSS4_mutation VALUES ('proteinins',0);
+INSERT INTO TMPRSS4_mutation VALUES ('intron',2);
+INSERT INTO TMPRSS4_mutation VALUES ('splice region',3);
 
-INSERT INTO lung_cancer_mutation VALUES ('CEACAM5',140,5,2,5,0,71,1,2,5,231);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO CEACAM5_mutation VALUES ('missense',140);
+INSERT INTO CEACAM5_mutation VALUES ('frameshift',5);
+INSERT INTO CEACAM5_mutation VALUES ('splice',2);
+INSERT INTO CEACAM5_mutation VALUES ('nonsense',5);
+INSERT INTO CEACAM5_mutation VALUES ('proteinindel',0);
+INSERT INTO CEACAM5_mutation VALUES ('silent',71);
+INSERT INTO CEACAM5_mutation VALUES ('proteinins',1);
+INSERT INTO CEACAM5_mutation VALUES ('intron',2);
+INSERT INTO CEACAM5_mutation VALUES ('splice region',5);
 
-INSERT INTO lung_cancer_mutation VALUES ('RPS4Y1',7,1,1,2,0,2,0,0,0,13);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO RPS4Y1_mutation VALUES ('missense',101);
+INSERT INTO RPS4Y1_mutation VALUES ('frameshift',7);
+INSERT INTO RPS4Y1_mutation VALUES ('splice',0);
+INSERT INTO RPS4Y1_mutation VALUES ('nonsense',3);
+INSERT INTO RPS4Y1_mutation VALUES ('proteinindel',0);
+INSERT INTO RPS4Y1_mutation VALUES ('silent',19);
+INSERT INTO RPS4Y1_mutation VALUES ('proteinins',0);
+INSERT INTO RPS4Y1_mutation VALUES ('intron',0);
+INSERT INTO RPS4Y1_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('FCN3',43,2,2,2,0,19,0,2,0,70);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO FCN3_mutation VALUES ('missense',43);
+INSERT INTO FCN3_mutation VALUES ('frameshift',2);
+INSERT INTO FCN3_mutation VALUES ('splice',2);
+INSERT INTO FCN3_mutation VALUES ('nonsense',2);
+INSERT INTO FCN3_mutation VALUES ('proteinindel',0);
+INSERT INTO FCN3_mutation VALUES ('silent',19);
+INSERT INTO FCN3_mutation VALUES ('proteinins',0);
+INSERT INTO FCN3_mutation VALUES ('intron',2);
+INSERT INTO FCN3_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('DEFA1B',0,0,0,0,0,0,0,0,0,0);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO DEFA1B_mutation VALUES ('missense',0);
+INSERT INTO DEFA1B_mutation VALUES ('frameshift',0);
+INSERT INTO DEFA1B_mutation VALUES ('splice',0);
+INSERT INTO DEFA1B_mutation VALUES ('nonsense',0);
+INSERT INTO DEFA1B_mutation VALUES ('proteinindel',0);
+INSERT INTO DEFA1B_mutation VALUES ('silent',0);
+INSERT INTO DEFA1B_mutation VALUES ('proteinins',0);
+INSERT INTO DEFA1B_mutation VALUES ('intron',0);
+INSERT INTO DEFA1B_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('BTNL9',75,3,1,4,0,40,0,7,1,131);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO BTNL9_mutation VALUES ('missense',75);
+INSERT INTO BTNL9_mutation VALUES ('frameshift',3);
+INSERT INTO BTNL9_mutation VALUES ('splice',1);
+INSERT INTO BTNL9_mutation VALUES ('nonsense',4);
+INSERT INTO BTNL9_mutation VALUES ('proteinindel',0);
+INSERT INTO BTNL9_mutation VALUES ('silent',40);
+INSERT INTO BTNL9_mutation VALUES ('proteinins',0);
+INSERT INTO BTNL9_mutation VALUES ('intron',7);
+INSERT INTO BTNL9_mutation VALUES ('splice region',1);
 
-INSERT INTO lung_cancer_mutation VALUES ('DEFA1',0,0,0,0,0,0,0,0,0,0);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO DEFA1_mutation VALUES ('missense',0);
+INSERT INTO DEFA1_mutation VALUES ('frameshift',0);
+INSERT INTO DEFA1_mutation VALUES ('splice',0);
+INSERT INTO DEFA1_mutation VALUES ('nonsense',0);
+INSERT INTO DEFA1_mutation VALUES ('proteinindel',0);
+INSERT INTO DEFA1_mutation VALUES ('silent',0);
+INSERT INTO DEFA1_mutation VALUES ('proteinins',0);
+INSERT INTO DEFA1_mutation VALUES ('intron',0);
+INSERT INTO DEFA1_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('IL1RL1',126,6,3,4,0,49,0,15,3,206);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO IL1RL1_mutation VALUES ('missense',126);
+INSERT INTO IL1RL1_mutation VALUES ('frameshift',6);
+INSERT INTO IL1RL1_mutation VALUES ('splice',3);
+INSERT INTO IL1RL1_mutation VALUES ('nonsense',4);
+INSERT INTO IL1RL1_mutation VALUES ('proteinindel',0);
+INSERT INTO IL1RL1_mutation VALUES ('silent',49);
+INSERT INTO IL1RL1_mutation VALUES ('proteinins',0);
+INSERT INTO IL1RL1_mutation VALUES ('intron',15);
+INSERT INTO IL1RL1_mutation VALUES ('splice region',3);
 
-INSERT INTO lung_cancer_mutation VALUES ('TMEM100',32,3,0,4,1,16,0,0,0,56);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO TMEM100_mutation VALUES ('missense',32);
+INSERT INTO TMEM100_mutation VALUES ('frameshift',3);
+INSERT INTO TMEM100_mutation VALUES ('splice',0);
+INSERT INTO TMEM100_mutation VALUES ('nonsense',4);
+INSERT INTO TMEM100_mutation VALUES ('proteinindel',1);
+INSERT INTO TMEM100_mutation VALUES ('silent',16);
+INSERT INTO TMEM100_mutation VALUES ('proteinins',0);
+INSERT INTO TMEM100_mutation VALUES ('intron',0);
+INSERT INTO TMEM100_mutation VALUES ('splice region',0);
 
-INSERT INTO lung_cancer_mutation VALUES ('CA4',50,0,0,4,0,24,0,0,1,79);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO CA4_mutation VALUES ('missense',50);
+INSERT INTO CA4_mutation VALUES ('frameshift',0);
+INSERT INTO CA4_mutation VALUES ('splice',0);
+INSERT INTO CA4_mutation VALUES ('nonsense',4);
+INSERT INTO CA4_mutation VALUES ('proteinindel',0);
+INSERT INTO CA4_mutation VALUES ('silent',24);
+INSERT INTO CA4_mutation VALUES ('proteinins',0);
+INSERT INTO CA4_mutation VALUES ('intron',0);
+INSERT INTO CA4_mutation VALUES ('splice region',1);
 
-INSERT INTO lung_cancer_mutation VALUES ('AGER',37,5,3,1,0,12,0,5,1,64);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO AGER_mutation VALUES ('missense',37);
+INSERT INTO AGER_mutation VALUES ('frameshift',5);
+INSERT INTO AGER_mutation VALUES ('splice',3);
+INSERT INTO AGER_mutation VALUES ('nonsense',1);
+INSERT INTO AGER_mutation VALUES ('proteinindel',0);
+INSERT INTO AGER_mutation VALUES ('silent',12);
+INSERT INTO AGER_mutation VALUES ('proteinins',0);
+INSERT INTO AGER_mutation VALUES ('intron',5);
+INSERT INTO AGER_mutation VALUES ('splice region',1);
 
-INSERT INTO lung_cancer_mutation VALUES ('HBA1',8,4,0,2,0,10,0,2,0,26);
-INSERT INTO _mutation VALUES ('missense',101);
-INSERT INTO _mutation VALUES ('frameshift',7);
-INSERT INTO _mutation VALUES ('splice',0);
-INSERT INTO _mutation VALUES ('nonsense',3);
-INSERT INTO _mutation VALUES ('proteinindel',0);
-INSERT INTO _mutation VALUES ('silent',19);
-INSERT INTO _mutation VALUES ('proteinins',0);
-INSERT INTO _mutation VALUES ('intron',0);
-INSERT INTO _mutation VALUES ('splice region',0);
+INSERT INTO HBA1_mutation VALUES ('missense',8);
+INSERT INTO HBA1_mutation VALUES ('frameshift',4);
+INSERT INTO HBA1_mutation VALUES ('splice',0);
+INSERT INTO HBA1_mutation VALUES ('nonsense',2);
+INSERT INTO HBA1_mutation VALUES ('proteinindel',0);
+INSERT INTO HBA1_mutation VALUES ('silent',10);
+INSERT INTO HBA1_mutation VALUES ('proteinins',0);
+INSERT INTO HBA1_mutation VALUES ('intron',2);
+INSERT INTO HBA1_mutation VALUES ('splice region',0);
