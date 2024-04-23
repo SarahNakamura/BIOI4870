@@ -294,7 +294,6 @@ INSERT INTO ADAM33_mutation VALUES ('proteinins',0);
 INSERT INTO ADAM33_mutation VALUES ('intron',11);
 INSERT INTO ADAM33_mutation VALUES ('splice region',4);
 
-INSERT INTO rectal_cancer_mutation VALUES ('SPEG',511,43,6,35,3,251,0,18,4,871);
 INSERT INTO SPEG_mutation VALUES ('missense',511);
 INSERT INTO SPEG_mutation VALUES ('frameshift',43);
 INSERT INTO SPEG_mutation VALUES ('splice',6);
