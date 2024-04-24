@@ -36,7 +36,7 @@ if ($row) {
 <html lang="en">
 <html>
 <head>
-    <h1 style=background-color:#FDFF8B>Gene:TFF1</h1>
+    <h1 style=background-color:#FDFF8B>Gene:COL10A1</h1>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
