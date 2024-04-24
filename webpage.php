@@ -29,7 +29,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="webpage_style" type="text/css" "href="webpage_style.css">
+    <link rel="stylesheet" type="text/css" "href="webpage_style.css">
     <meta charset="UTF-8">
     <meta name="webview" content="width=device-width, initial-scale=1.0">
 </head>
@@ -40,8 +40,8 @@
         By clicking on one of the genes within the list, it should visualize the proportion of each mutation type.
         Some genes will not show a pie chart. This is either because it did not have any mutation record or was a specific isolate.
     </p>
-    <h3>Cancer Type Table</h3>
-    Select a cancer type from this table.
+    <h2>Cancer Type Table</h2>
+    <p>Select a cancer type from this table.</p>
     <table id="cancerTable">
         <thead>
             <tr>
