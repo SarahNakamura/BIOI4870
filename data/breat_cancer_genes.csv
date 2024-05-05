@@ -1,0 +1,22 @@
+gene name,geneID,log2,full name,chromosome location
+COL10A1,ENSG00000123500.9,5.934,collagen type X alpha 1 chain,6q22.1
+TFF1,ENSG00000160182.2,5.892,trefoil factor 1,21q22.3
+RP11-40C6.2,ENSG00000219928.2,5.642,NULL,NULL
+MMP11,ENSG00000099953.9,5.567,matrix metallopeptidase 11,22q11.23
+COL11A1,ENSG00000060718.18,4.668,collagen type XI alpha 1 chain,1p21.1
+AP000349.2,ENSG00000280178.1,4.561,NULL,NULL
+UBE2C,ENSG00000175063.16,4.527,ubiquitin conjugating enzyme E2 C,20q13.12
+RP5-940J5.9,ENSG00000269968.1,4.191,NULL,NULL
+AGR3,ENSG00000173467.8,4.189,anterior gradient 3/ protein disulphide isomerase family member,7p21.1
+S100P,ENSG00000163993.6,4.113,S100 calcium binding protein P,4p16.1
+
+ADH1B,ENSG00000196616.12,-6.669,alcohol dehydrogenase 1B (class I) /beta polypeptide,4q23
+FABP4,ENSG00000170323.8,-6.623,fatty acid binding protein 4,8q21.13
+CIDEC,ENSG00000187288.10,-6.453,cell death inducing DFFA like effector c,3p25.3
+PLIN1,ENSG00000166819.11,-6.025,perilipin 1,15q26.1
+GPD1,ENSG00000167588.12,-5.69,glycerol-3-phosphate dehydrogenase 1,12q13.12
+ADIPOQ,ENSG00000181092.9,-5.615,adiponectin/C1Q and collagen domain containing,3q27.3
+RBP4,ENSG00000138207.12,-5.514,retinol binding protein 4,10q23.33
+PLIN4,ENSG00000167676.4,-5.465,perilipin 4,19p13.3
+CD300LG,ENSG00000161649.12,-5.376,CD300 molecule like family member g,17q21.31
+AQP7,ENSG00000165269.12,-5.364,aquaporin 7,9p13.3

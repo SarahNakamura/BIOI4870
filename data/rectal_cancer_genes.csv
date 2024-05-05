@@ -1,0 +1,22 @@
+gene name,geneID,log2,full name,chromosome location
+RP11-40C6.2,ENSG00000219928.2,8.617,RP11-40C6.2 (Clone-based (Vega) gene),NULL
+CEACAM6,ENSG00000086548.8,8.144,CEA cell adhesion molecule 6,19q13.2
+CEACAM5,ENSG00000105388.14,7.502,CEA cell adhesion molecule 5,19q13.2
+LCN2,ENSG00000148346.11,7.016,lipocalin 2,9q34.11
+DPEP1,ENSG00000015413.9,6.794,dipeptidase 1,16q24.3
+GPX2,ENSG00000176153.11,6.759,glutathione peroxidase 2,14q23.3
+EPCAM,ENSG00000119888.10,6.434,epithelial cell adhesion molecule,2p21
+S100P,ENSG00000163993.6,6.429,S100 calcium binding protein P,4p16.1
+PRAP1,ENSG00000165828.13,5.924,proline rich acidic protein 1,10q26.3
+CDH1,ENSG00000039068.18,5.894,cadherin 1,16q22.1
+
+DES,ENSG00000175084.11,-7.621,desmin,2q35
+MYH11,ENSG00000133392.16,-6.786,myosin heavy chain 11,16p13.11
+ACTG2,ENSG00000163017.13,-6.69,actin gamma 2/smooth muscle,2p13.1
+SYNM,ENSG00000182253.14,-6.683,synemin,15q26.3
+RP11-394O4.5,ENSG00000269936.3,-6.648,NULL,NULL
+CNN1,ENSG00000130176.7,-6.222,calponin 1,19p13.2
+ADH1B,ENSG00000196616.12,-6.189,alcohol dehydrogenase 1B (class I)/ beta polypeptide,4q23
+PSD,ENSG00000059915.16,-6.125,pleckstrin and Sec7 domain containing,10q24.32
+ADAM33,ENSG00000149451.17,-5.969,ADAM metallopeptidase domain 33,20p13
+SPEG,ENSG00000072195.14,-5.944,striated muscle enriched protein kinase,2q35
