@@ -25,7 +25,7 @@ I have retreived data from the following sources:
 
 *__Disclaimer__*
 
-In this database, there will be mutation type table for each cancer related gene: 20*4=80 tables with 
+In this database, there will be mutation type table and php file for each cancer related gene: 20*4=80 tables with 
 the same column value (mutation types). With the limited resource available for this class, this was the only way for 
 the code to work. I thoroughly understand the redundancy of this database which is not ideal in the real-world.   
 
