@@ -1,13 +1,14 @@
 -- Use this database
 USE snakamura;
 
--- Drop the breast_cancer_genes, lung_cancer_genes, colon_cancer_genes, and rectal_cancer_genes tables if it already exists
+-- Drop the breast_cancer_genes, lung_cancer_genes, colon_cancer_genes, and rectal_cancer_genes tables
+-- if it already exists
 DROP TABLE IF EXISTS breast_cancer_genes;
 DROP TABLE IF EXISTS lung_cancer_genes;
 DROP TABLE IF EXISTS colon_cancer_genes;
 DROP TABLE IF EXISTS rectal_cancer_genes;
 
--- DDL to create table gene_info
+-- DDL to create table breast_cancer_genes
 CREATE TABLE breast_cancer_genes(
     gene_name VARCHAR(15),
     gene_id VARCHAR(20),
@@ -17,6 +18,7 @@ CREATE TABLE breast_cancer_genes(
     PRIMARY KEY (gene_id)
     );
 
+-- DDL to create table lung_cancer_genes
 CREATE TABLE lung_cancer_genes(
     gene_name VARCHAR(15),
     gene_id VARCHAR(20),
@@ -26,6 +28,7 @@ CREATE TABLE lung_cancer_genes(
     PRIMARY KEY (gene_id)
     );
 
+-- DDL to create table colon_cancer_genes
 CREATE TABLE colon_cancer_genes(
     gene_name VARCHAR(15),
     gene_id VARCHAR(20),
@@ -35,6 +38,7 @@ CREATE TABLE colon_cancer_genes(
     PRIMARY KEY (gene_id)
     );
 
+-- DDL to create table rectal_cancer_genes
 CREATE TABLE rectal_cancer_genes(
     gene_name VARCHAR(15),
     gene_id VARCHAR(20),
@@ -44,7 +48,7 @@ CREATE TABLE rectal_cancer_genes(
     PRIMARY KEY (gene_id)
     );
 
--- DDL to create table gene_mutation
+-- DML to insert values in table breast_cancer_mutation
 INSERT INTO breast_cancer_genes VALUES ('COL10A1','ENSG00000123500.9',5.934,'collagen type X alpha 1 chain','6q22.1');
 INSERT INTO breast_cancer_genes VALUES ('TFF1','ENSG00000160182.2',5.892,'trefoil factor 1','21q22.3');
 INSERT INTO breast_cancer_genes VALUES ('RP11-40C6.2','ENSG00000219928.2',5.642,NULL,NULL);
@@ -66,6 +70,7 @@ INSERT INTO breast_cancer_genes VALUES ('PLIN4','ENSG00000167676.4',-5.465,'peri
 INSERT INTO breast_cancer_genes VALUES ('CD300LG','ENSG00000161649.12',-5.376,'CD300 molecule like family member g','17q21.31');
 INSERT INTO breast_cancer_genes VALUES ('AQP7','ENSG00000165269.12',-5.364,'aquaporin 7','9p13.3');
 
+-- DML to insert values in table lung_cancer_mutation
 INSERT INTO lung_cancer_genes VALUES ('RP11-40C6.2','ENSG00000219928.2',8.216,NULL,NULL);
 INSERT INTO lung_cancer_genes VALUES ('XAGE1A','ENSG00000204379.10',6.983,'X antigen family member 1A','Xp11.22');
 INSERT INTO lung_cancer_genes VALUES ('XAGE1B','ENSG00000204382.11',6.181,'X antigen family member 1B','Xp11.22');
@@ -87,6 +92,7 @@ INSERT INTO lung_cancer_genes VALUES ('CA4','ENSG00000167434.9',-5.436,'carbonic
 INSERT INTO lung_cancer_genes VALUES ('AGER','ENSG00000204305.13',-5.336,'advanced glycosylation end-product specific receptor','6p21.32');
 INSERT INTO lung_cancer_genes VALUES ('HBA1','ENSG00000206172.8',-5.12,'hemoglobin subunit alpha 1','16p13.3');
 
+-- DML to insert values in table colon_cancer_mutation
 INSERT INTO colon_cancer_genes VALUES ('RP11-40C6.2','ENSG00000219928.2',8.703,NULL,NULL);
 INSERT INTO colon_cancer_genes VALUES ('CEACAM6','ENSG00000086548.8',6.596,'CEA cell adhesion molecule 6','19q13.2');
 INSERT INTO colon_cancer_genes VALUES ('DPEP1','ENSG00000015413.9',6.243,'dipeptidase 1','16q24.3');
@@ -108,6 +114,7 @@ INSERT INTO colon_cancer_genes VALUES ('HSPB6','ENSG00000004776.11',-6.176,'heat
 INSERT INTO colon_cancer_genes VALUES ('ADAM33','ENSG00000149451.17',-5.97,'ADAM metallopeptidase domain 33','20p13');
 INSERT INTO colon_cancer_genes VALUES ('LMOD1','ENSG00000163431.12',-5.782,'leiomodin 1','1q32.1');
 
+-- DML to insert values in table rectal_cancer_mutation
 INSERT INTO rectal_cancer_genes VALUES ('RP11-40C6.2','ENSG00000219928.2',8.617,'RP11-40C6.2 (Clone-based (Vega) gene)',NULL);
 INSERT INTO rectal_cancer_genes VALUES ('CEACAM6','ENSG00000086548.8',8.144,'CEA cell adhesion molecule 6','19q13.2');
 INSERT INTO rectal_cancer_genes VALUES ('CEACAM5','ENSG00000105388.14',7.502,'CEA cell adhesion molecule 5','19q13.2');

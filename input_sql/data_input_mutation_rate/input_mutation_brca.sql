@@ -1,7 +1,7 @@
 -- Use this database
 USE snakamura;
 
--- Drop the breast_cancer_genes, lung_cancer_genes, colon_cancer_genes, and rectal_cancer_genes tables if it already exists
+-- Drop the [*_mutation] tables if it already exists (20 in total)
 DROP TABLE IF EXISTS COL10A1_mutation;
 DROP TABLE IF EXISTS TFF1_mutation;
 DROP TABLE IF EXISTS RP11_40C6_2_mutation;
@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS PLIN4_mutation;
 DROP TABLE IF EXISTS CD300LG_mutation;
 DROP TABLE IF EXISTS AQP7_mutation;
 
--- DDL to create table gene_info
+-- DDL to create tables [gene]_mutation
 CREATE TABLE COL10A1_mutation(
     name VARCHAR(15),
     frequency INT(3)
@@ -105,7 +105,7 @@ CREATE TABLE AQP7_mutation(
     frequency INT(3)
 );
 
-
+-- DML to insert values in table COL10A1_mutation
 INSERT INTO COL10A1_mutation VALUES ('missense',101);
 INSERT INTO COL10A1_mutation VALUES ('frameshift',7);
 INSERT INTO COL10A1_mutation VALUES ('splice',0);
@@ -116,6 +116,7 @@ INSERT INTO COL10A1_mutation VALUES ('proteinins',0);
 INSERT INTO COL10A1_mutation VALUES ('intron',0);
 INSERT INTO COL10A1_mutation VALUES ('splice region',0);
 
+-- DML to insert values in table TFF1_mutation
 INSERT INTO TFF1_mutation VALUES ('missense',13);
 INSERT INTO TFF1_mutation VALUES ('frameshift',2);
 INSERT INTO TFF1_mutation VALUES ('splice',1);
@@ -126,6 +127,7 @@ INSERT INTO TFF1_mutation VALUES ('proteinins',0);
 INSERT INTO TFF1_mutation VALUES ('intron',0);
 INSERT INTO TFF1_mutation VALUES ('splice region',0);
 
+-- DML to insert values in table RP11_40C6_2_mutation
 INSERT INTO RP11_40C6_2_mutation VALUES ('missense',0);
 INSERT INTO RP11_40C6_2_mutation VALUES ('frameshift',0);
 INSERT INTO RP11_40C6_2_mutation VALUES ('splice',0);
@@ -136,6 +138,7 @@ INSERT INTO RP11_40C6_2_mutation VALUES ('proteinins',0);
 INSERT INTO RP11_40C6_2_mutation VALUES ('intron',0);
 INSERT INTO RP11_40C6_2_mutation VALUES ('splice region',0);
 
+-- DML to insert values in table MMP11_mutation
 INSERT INTO MMP11_mutation VALUES ('missense',64);
 INSERT INTO MMP11_mutation VALUES ('frameshift',5);
 INSERT INTO MMP11_mutation VALUES ('splice',1);
@@ -146,6 +149,7 @@ INSERT INTO MMP11_mutation VALUES ('proteinins',0);
 INSERT INTO MMP11_mutation VALUES ('intron',7);
 INSERT INTO MMP11_mutation VALUES ('splice region',1);
 
+-- DML to insert values in table COL11A1_mutation
 INSERT INTO COL11A1_mutation VALUES ('missense',769);
 INSERT INTO COL11A1_mutation VALUES ('frameshift',38);
 INSERT INTO COL11A1_mutation VALUES ('splice',60);
@@ -156,7 +160,7 @@ INSERT INTO COL11A1_mutation VALUES ('proteinins',0);
 INSERT INTO COL11A1_mutation VALUES ('intron',33);
 INSERT INTO COL11A1_mutation VALUES ('splice region',17);
 
-
+-- DML to insert values in table AP000349_2_mutation
 INSERT INTO AP000349_2_mutation VALUES ('missense',0);
 INSERT INTO AP000349_2_mutation VALUES ('frameshift',0);
 INSERT INTO AP000349_2_mutation VALUES ('splice',0);
@@ -167,7 +171,7 @@ INSERT INTO AP000349_2_mutation VALUES ('proteinins',0);
 INSERT INTO AP000349_2_mutation VALUES ('intron',0);
 INSERT INTO AP000349_2_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table UBE2C_mutation
 INSERT INTO UBE2C_mutation VALUES ('missense',16);
 INSERT INTO UBE2C_mutation VALUES ('frameshift',1);
 INSERT INTO UBE2C_mutation VALUES ('splice',4);
@@ -178,7 +182,7 @@ INSERT INTO UBE2C_mutation VALUES ('proteinins',0);
 INSERT INTO UBE2C_mutation VALUES ('intron',7);
 INSERT INTO UBE2C_mutation VALUES ('splice region',2);
 
-
+-- DML to insert values in table RP5_940J5_9_mutation
 INSERT INTO RP5_940J5_9_mutation VALUES ('missense',0);
 INSERT INTO RP5_940J5_9_mutation VALUES ('frameshift',0);
 INSERT INTO RP5_940J5_9_mutation VALUES ('splice',0);
@@ -189,7 +193,7 @@ INSERT INTO RP5_940J5_9_mutation VALUES ('proteinins',0);
 INSERT INTO RP5_940J5_9_mutation VALUES ('intron',0);
 INSERT INTO RP5_940J5_9_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table ARG3_mutation
 INSERT INTO AGR3_mutation VALUES ('missense',27);
 INSERT INTO AGR3_mutation VALUES ('frameshift',1);
 INSERT INTO AGR3_mutation VALUES ('splice',0);
@@ -200,7 +204,7 @@ INSERT INTO AGR3_mutation VALUES ('proteinins',0);
 INSERT INTO AGR3_mutation VALUES ('intron',0);
 INSERT INTO AGR3_mutation VALUES ('splice region',1);
 
-
+-- DML to insert values in table SP100P_mutation
 INSERT INTO S100P_mutation VALUES ('missense',7);
 INSERT INTO S100P_mutation VALUES ('frameshift',1);
 INSERT INTO S100P_mutation VALUES ('splice',0);
@@ -211,7 +215,7 @@ INSERT INTO S100P_mutation VALUES ('proteinins',0);
 INSERT INTO S100P_mutation VALUES ('intron',0);
 INSERT INTO S100P_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table ADH1B_mutation
 INSERT INTO ADH1B_mutation VALUES ('missense',103);
 INSERT INTO ADH1B_mutation VALUES ('frameshift',4);
 INSERT INTO ADH1B_mutation VALUES ('splice',4);
@@ -222,7 +226,7 @@ INSERT INTO ADH1B_mutation VALUES ('proteinins',0);
 INSERT INTO ADH1B_mutation VALUES ('intron',9);
 INSERT INTO ADH1B_mutation VALUES ('splice region',3);
 
-
+-- DML to insert values in table FABP4_mutation
 INSERT INTO FABP4_mutation VALUES ('missense',21);
 INSERT INTO FABP4_mutation VALUES ('frameshift',2);
 INSERT INTO FABP4_mutation VALUES ('splice',0);
@@ -233,7 +237,7 @@ INSERT INTO FABP4_mutation VALUES ('proteinins',0);
 INSERT INTO FABP4_mutation VALUES ('intron',0);
 INSERT INTO FABP4_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table CIDEC_mutation
 INSERT INTO CIDEC_mutation VALUES ('missense',30);
 INSERT INTO CIDEC_mutation VALUES ('frameshift',1);
 INSERT INTO CIDEC_mutation VALUES ('splice',0);
@@ -244,7 +248,7 @@ INSERT INTO CIDEC_mutation VALUES ('proteinins',0);
 INSERT INTO CIDEC_mutation VALUES ('intron',1);
 INSERT INTO CIDEC_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table PLIN1_mutation
 INSERT INTO PLIN1_mutation VALUES ('missense',58);
 INSERT INTO PLIN1_mutation VALUES ('frameshift',4);
 INSERT INTO PLIN1_mutation VALUES ('splice',2);
@@ -255,7 +259,7 @@ INSERT INTO PLIN1_mutation VALUES ('proteinins',0);
 INSERT INTO PLIN1_mutation VALUES ('intron',0);
 INSERT INTO PLIN1_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table GPD1_mutation
 INSERT INTO GPD1_mutation VALUES ('missense',57);
 INSERT INTO GPD1_mutation VALUES ('frameshift',2);
 INSERT INTO GPD1_mutation VALUES ('splice',3);
@@ -266,7 +270,7 @@ INSERT INTO GPD1_mutation VALUES ('proteinins',0);
 INSERT INTO GPD1_mutation VALUES ('intron',13);
 INSERT INTO GPD1_mutation VALUES ('splice region',1);
 
-
+-- DML to insert values in table ADIPOQ_mutation
 INSERT INTO ADIPOQ_mutation VALUES ('missense',50);
 INSERT INTO ADIPOQ_mutation VALUES ('frameshift',1);
 INSERT INTO ADIPOQ_mutation VALUES ('splice',1);
@@ -277,7 +281,7 @@ INSERT INTO ADIPOQ_mutation VALUES ('proteinins',0);
 INSERT INTO ADIPOQ_mutation VALUES ('intron',0);
 INSERT INTO ADIPOQ_mutation VALUES ('splice region',1);
 
-
+-- DML to insert values in table RBP4_mutation
 INSERT INTO RBP4_mutation VALUES ('missense',29);
 INSERT INTO RBP4_mutation VALUES ('frameshift',0);
 INSERT INTO RBP4_mutation VALUES ('splice',0);
@@ -288,6 +292,7 @@ INSERT INTO RBP4_mutation VALUES ('proteinins',0);
 INSERT INTO RBP4_mutation VALUES ('intron',0);
 INSERT INTO RBP4_mutation VALUES ('splice region',0);
 
+-- DML to insert values in table PLIN4_mutation
 INSERT INTO PLIN4_mutation VALUES ('missense',159);
 INSERT INTO PLIN4_mutation VALUES ('frameshift',11);
 INSERT INTO PLIN4_mutation VALUES ('splice',0);
@@ -298,7 +303,7 @@ INSERT INTO PLIN4_mutation VALUES ('proteinins',0);
 INSERT INTO PLIN4_mutation VALUES ('intron',0);
 INSERT INTO PLIN4_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table CD300LG_mutation
 INSERT INTO CD300LG_mutation VALUES ('missense',56);
 INSERT INTO CD300LG_mutation VALUES ('frameshift',3);
 INSERT INTO CD300LG_mutation VALUES ('splice',2);
@@ -309,7 +314,7 @@ INSERT INTO CD300LG_mutation VALUES ('proteinins',0);
 INSERT INTO CD300LG_mutation VALUES ('intron',5);
 INSERT INTO CD300LG_mutation VALUES ('splice region',0);
 
-
+-- DML to insert values in table AQP7_mutation
 INSERT INTO AQP7_mutation VALUES ('missense',52);
 INSERT INTO AQP7_mutation VALUES ('frameshift',5);
 INSERT INTO AQP7_mutation VALUES ('splice',0);
