@@ -10,7 +10,7 @@
 </html>
 <?php
    $servername = "localhost";
-   $username = "snakamura";
+   $username = "snakamura"; // replace with your own username
    $password = "";
    $dbname = "snakamura";
 
