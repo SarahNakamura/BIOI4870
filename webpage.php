@@ -29,16 +29,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" "href="webpage_style.css">
+    <link rel="stylesheet" type="text/css" href="webpage_style.css">
     <meta charset="UTF-8">
     <meta name="webview" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <h1>BIOI-4870 Final Project [Gene Mutation and Cancer]</h1>
-    <h2>This is my final project for BIOI 4870.</h2>
-    <p>It is made to help researchers to predict what mutation type a cancer related gene is experiencing.To navigate this tool, click on one of the cancer names from the table below. It should take you to a new page of the gene list related to the choice cancer.
-        By clicking on one of the genes within the list, it should visualize the proportion of each mutation type.
-        Some genes will not show a pie chart. This is either because it did not have any mutation record or was a specific isolate.
+    <p>This is my final project for BIOI 4870. It is made to help researchers to predict what mutation typ$
+    <p>To navigate this tool, click on one of the cancer names from the table below. It should take you to$
+        By clicking on one of the genes within the list, it should visualize the proportion of each mutati$
+        Some genes will not show a pie chart. This is either because it did not have any mutation record o$
     </p>
     <h2>Cancer Type Table</h2>
     <p>Select a cancer type from this table.</p>
@@ -58,7 +58,7 @@
             <tr>
 
                 <td><?php echo $rows['cancer_name']; ?></td>
-                <td><a href="<?php echo $rows['cancer_abb'] ?>.php"><?php echo $rows['cancer_abb']; ?></a></td>
+                <td><a href="<?php echo $rows['cancer_abb'] ?>.php"><?php echo $rows['cancer_abb']; ?></a>$
 
             </tr>
             <?php } ?>
