@@ -10,7 +10,7 @@ I have retreived data from the following sources:
 - CAOD: Colon adenocarcinoma (colon cancer)
 - READ: Rectum adenocarcinoma (rectal cancer)
 
-link to source: <http://gepia.cancer-pku.cn/index.html>
+    link to source: <http://gepia.cancer-pku.cn/index.html>
 
     The gene names, gene ID, and its fold change values were extracted from this tool by hand.
 2.  __NCBI Gene Database__
