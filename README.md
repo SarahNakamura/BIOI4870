@@ -10,18 +10,24 @@ I have retreived data from the following sources:
 - CAOD: Colon adenocarcinoma (colon cancer)
 - READ: Rectum adenocarcinoma (rectal cancer)
 
+link to source: <http://gepia.cancer-pku.cn/index.html>
+
     The gene names, gene ID, and its fold change values were extracted from this tool by hand.
 2.  __NCBI Gene Database__
     This database was used to retrieve further information about the genes of interest. From the gene name extracted 
     from GEPIA, I looked up the gene and extracted the full name of the gene and chromosome location. This information 
-    from each gene is essential to achieve the goal of this project and was retrieved by hand. 
+    from each gene is essential to achieve the goal of this project and was retrieved by hand.
+
+    link to source: <https://www.ncbi.nlm.nih.gov/gene>
 
 
-3.  __GDC Data Portal by the National Institute of Health__
+4.  __GDC Data Portal by the National Institute of Health__
     This data portal was used to extract the mutation type frequency specifically using protein paint, one of the 
     analysis tools that output a visualization of mutations in protein-coding genes. I used the gene name to retrieve 
     the mutation frequency information. In the bottom part of the output, there is a section “GDC” where the mutation 
     frequency can be observed by mutation types. The values for each mutation type were retrieved by hand.
+
+     link to source:<https://portal.gdc.cancer.gov/>
 
 *__Disclaimer__*
 
